@@ -5,17 +5,23 @@
 明天去验证一下用这个包导入3万条数据大概花多长时间
 
 install.packages("openxlsx")
+
 library(openxlsx)
 
 #测试是否可用
+
 ta <- read.xlsx("/Users/soft/RDATA/test.xlsx")
+
 ＃result
+
 > data
   this    is test
 1    1    fe   fs
 2   23 retwt   12
+
 #result str()
-> str(data)
+
+ str(data)
 'data.frame':	2 obs. of  3 variables:
  $ this: num  1 23
  $ is  : chr  "fe" "retwt"
