@@ -27,4 +27,11 @@ ta <- read.xlsx("/Users/soft/RDATA/test.xlsx")
  $ is  : chr  "fe" "retwt"
  $ test: chr  "fs" "12"
  
-＃完美搞定还有就是常用的导入sas 数据集来
+ 今天进行测试；excel有5w条数据，8个变量；
+ 用这个来读取速度还行，唯一不满意的是变量格式不好设置，特别是有日期格式存在的情况下需要自己再转化一次日期
+ 
+ 日期转换：
+ 
+data$register_date=convertToDate(data$register_date, origin = "1900-01-01")
+
+完美搞定还有就是常用的导入sas 数据集来
